@@ -58,7 +58,7 @@ const disciplines = [
 
 export default function Home() {
   return (
-    <main>
+    <main id="top">
       <header className="site-header">
         <a href="#" className="wordmark" aria-label="Workfolio, início">
           workfolio<span className="wordmark-dot">.</span>
