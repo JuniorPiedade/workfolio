@@ -1,3 +1,4 @@
+
 import {
   ArrowDown,
   ArrowRight,
@@ -68,10 +69,11 @@ export default function Home() {
           <a href="#explore">Explorar</a>
           <a href="#manifesto">Nossa ideia</a>
           <a href="#disciplines">Áreas criativas</a>
+          <a href="/entrar">Entrar</a>
         </nav>
 
-        <a href="#community" className="header-cta">
-          Conheça o Workfolio <ArrowUpRight size={15} />
+        <a href="/cadastro" className="header-cta">
+          Faça parte da comunidade <ArrowUpRight size={15} />
         </a>
 
         <a href="#explore" className="mobile-menu" aria-label="Ir para projetos">
@@ -105,8 +107,8 @@ export default function Home() {
               Um espaço para apresentar seu trabalho, fortalecer sua presença
               profissional e se conectar com quem também faz acontecer.
             </p>
-            <a href="#explore" className="text-link">
-              Descubra o Workfolio <ArrowDown size={15} />
+            <a href="/cadastro" className="text-link">
+              Comece sua jornada <ArrowRight size={15} />
             </a>
           </div>
         </div>
@@ -245,13 +247,19 @@ export default function Home() {
             <span className="serif-italic">Amplie seus horizontes.</span>
           </h2>
           <p>
-            Estamos construindo um novo espaço para profissionais que vivem de
-            ideias, projetos e possibilidades.
+            Sua trajetória criativa merece um espaço próprio. Crie seu perfil,
+            apresente seus projetos e descubra novas possibilidades.
           </p>
-          <span className="coming-soon">
-            <span className="status-dot" />
-            WORKFOLIO EM DESENVOLVIMENTO
-          </span>
+
+          <div className="community-actions">
+            <a href="/cadastro" className="header-cta">
+              Faça parte da comunidade <ArrowUpRight size={16} />
+            </a>
+
+            <a href="/entrar" className="text-link">
+              Já tem uma conta? Entre aqui <ArrowRight size={15} />
+            </a>
+          </div>
         </div>
 
         <div className="community-bottom">
@@ -269,8 +277,8 @@ export default function Home() {
           Seu trabalho. Sua identidade. Suas conexões.
         </span>
 
-        <a href="#top" className="back-to-top">
-          Voltar ao topo <ArrowUpRight size={15} />
+        <a href="/entrar" className="back-to-top">
+          Acessar minha conta <ArrowUpRight size={15} />
         </a>
 
         <span className="copyright">
