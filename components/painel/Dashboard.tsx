@@ -484,9 +484,9 @@ export default function Dashboard({
                         : "Seu nome de usuário ainda não foi definido"}
                     </span>
                   </div>
-                  <a href="#configuracoes" className={styles.editProfile}>
-                    Editar perfil <ArrowUpRight size={14} />
-                  </a>
+                  <Link href="/painel/perfil" className={styles.editProfile}>
+  Editar perfil <ArrowUpRight size={14} />
+</Link>
                 </div>
 
                 <div className={styles.profileBio}>
