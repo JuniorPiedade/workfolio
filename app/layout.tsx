@@ -3,21 +3,24 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Workfolio — Your work. Your identity. Your network.",
-    template: "%s — Workfolio"
+    default: "Workfolio — Seu trabalho. Sua identidade. Suas conexões.",
+    template: "%s | Workfolio"
   },
   description:
-    "Um espaço para profissionais criativos apresentarem seu trabalho, construírem sua identidade e encontrarem novas conexões.",
+    "Apresente seus projetos, construa sua identidade profissional e conecte-se com outros talentos criativos. Conheça o Workfolio.",
   applicationName: "Workfolio",
+  category: "technology",
   robots: {
     index: true,
     follow: true
   },
   openGraph: {
-    title: "Workfolio",
+    title: "Workfolio — Seu espaço profissional e criativo",
     description:
-      "Seu trabalho, sua identidade e sua rede profissional em um só lugar.",
-    type: "website"
+      "Um espaço para apresentar seu trabalho, fortalecer sua presença profissional e encontrar novas conexões.",
+    locale: "pt_BR",
+    type: "website",
+    siteName: "Workfolio"
   }
 };
 
