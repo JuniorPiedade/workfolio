@@ -121,9 +121,10 @@ export default function AuthForm({ mode }: AuthFormProps) {
         });
 
         if (signupError) {
-          setError(getFriendlyError(signupError.message));
-          return;
-        }
+  console.error("Erro no cadastro Workfolio:", signupError.message);
+  setError(signupError.message);
+  return;
+}
 
         if (data.session) {
           router.replace("/painel");
