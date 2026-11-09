@@ -190,8 +190,14 @@ export default function AuthForm({ mode }: AuthFormProps) {
         setPassword("");
         return;
       }
-    } catch {
-      setError("Ocorreu um erro inesperado. Tente novamente.");
+   } catch (error) {
+  console.error("Erro inesperado no Workfolio:", error);
+
+  setError(
+    error instanceof Error
+      ? error.message
+      : "Erro inesperado. Consulte o console do navegador."
+  );
     } finally {
       setLoading(false);
     }
