@@ -9,17 +9,17 @@ import {
 const projects = [
   {
     number: "01",
-    title: "Objects of permanence",
-    category: "ART DIRECTION · BRANDING",
-    creator: "Studio Nō",
+    title: "A beleza das formas",
+    category: "DIREÇÃO DE ARTE · IDENTIDADE VISUAL",
+    creator: "Estúdio Nō",
     image:
       "https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1200&q=85",
     className: "project-large"
   },
   {
     number: "02",
-    title: "A different perspective",
-    category: "DIGITAL DESIGN",
+    title: "Novos pontos de vista",
+    category: "DESIGN DIGITAL",
     creator: "Marina Costa",
     image:
       "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=1000&q=85",
@@ -27,7 +27,7 @@ const projects = [
   },
   {
     number: "03",
-    title: "Beyond the ordinary",
+    title: "Além do convencional",
     category: "3D · EXPERIMENTAL",
     creator: "Alex Morgan",
     image:
@@ -36,9 +36,9 @@ const projects = [
   },
   {
     number: "04",
-    title: "Form follows feeling",
-    category: "VISUAL IDENTITY",
-    creator: "Atelier Forma",
+    title: "Design que desperta sensações",
+    category: "IDENTIDADE VISUAL",
+    creator: "Ateliê Forma",
     image:
       "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1200&q=85",
     className: "project-large"
@@ -46,32 +46,32 @@ const projects = [
 ];
 
 const disciplines = [
-  "Graphic design",
-  "Development",
-  "Art direction",
+  "Design gráfico",
+  "Desenvolvimento",
+  "Direção de arte",
   "Motion design",
-  "Photography",
-  "3D & CGI",
-  "UI / UX",
-  "Creative technology"
+  "Fotografia",
+  "Modelagem 3D",
+  "Design de interfaces",
+  "Tecnologia criativa"
 ];
 
 export default function Home() {
   return (
     <main id="top">
       <header className="site-header">
-        <a href="#" className="wordmark" aria-label="Workfolio, início">
+        <a href="#top" className="wordmark" aria-label="Workfolio, início">
           workfolio<span className="wordmark-dot">.</span>
         </a>
 
         <nav className="main-nav" aria-label="Navegação principal">
           <a href="#explore">Explorar</a>
-          <a href="#manifesto">Sobre</a>
-          <a href="#disciplines">Disciplinas</a>
+          <a href="#manifesto">Nossa ideia</a>
+          <a href="#disciplines">Áreas criativas</a>
         </nav>
 
         <a href="#community" className="header-cta">
-          Conheça o projeto <ArrowUpRight size={15} />
+          Conheça o Workfolio <ArrowUpRight size={15} />
         </a>
 
         <a href="#explore" className="mobile-menu" aria-label="Ir para projetos">
@@ -81,29 +81,29 @@ export default function Home() {
 
       <section className="hero">
         <div className="hero-topline">
-          <span>THE CREATIVE PROFESSIONAL NETWORK</span>
+          <span>UMA NOVA REDE PARA QUEM CRIA</span>
           <span className="hero-location">
             <span className="status-dot" />
-            A NEW SPACE FOR CREATIVE MINDS
+            UM ESPAÇO PARA IDEIAS E CONEXÕES
           </span>
         </div>
 
         <div className="hero-content">
           <h1>
-            Your work.
+            Seu trabalho.
             <br />
-            Your <span className="outline-text">identity.</span>
+            Sua <span className="outline-text">identidade.</span>
             <br />
-            Your network<span className="accent-period">.</span>
+            Suas conexões<span className="accent-period">.</span>
           </h1>
 
           <div className="hero-aside">
             <Asterisk className="hero-asterisk" strokeWidth={1} />
             <p>
-              Mais do que um portfólio.
+              Muito além de um portfólio.
               <br />
-              Um espaço para mostrar o que você faz, construir sua presença
-              profissional e se conectar com quem cria.
+              Um espaço para apresentar seu trabalho, fortalecer sua presença
+              profissional e se conectar com quem também faz acontecer.
             </p>
             <a href="#explore" className="text-link">
               Descubra o Workfolio <ArrowDown size={15} />
@@ -112,28 +112,30 @@ export default function Home() {
         </div>
 
         <div className="hero-bottom">
-          <span>DESIGNERS. DEVELOPERS. CREATORS.</span>
-          <span>BUILT FOR PEOPLE WHO MAKE THINGS.</span>
+          <span>DESIGN. TECNOLOGIA. CRIATIVIDADE.</span>
+          <span>FEITO PARA QUEM TRANSFORMA IDEIAS EM PROJETOS.</span>
         </div>
       </section>
 
       <section className="featured-section" id="explore">
         <div className="section-heading">
           <div>
-            <span className="eyebrow">01 / SELECTED WORK</span>
+            <span className="eyebrow">01 / PROJETOS EM DESTAQUE</span>
             <h2>
-              Ideas made
+              Ideias que ganham
               <br />
-              <span className="serif-italic">visible.</span>
+              <span className="serif-italic">forma.</span>
             </h2>
           </div>
 
           <div className="section-intro">
             <p>
-              Trabalhos, experimentos e projetos que mostram o potencial de
-              quem transforma ideias em realidade.
+              Projetos, experimentos e criações que revelam o potencial de
+              profissionais que transformam ideias em realidade.
             </p>
-            <span className="project-count">A GLIMPSE INTO CREATIVE WORK</span>
+            <span className="project-count">
+              UM OLHAR SOBRE O UNIVERSO CRIATIVO
+            </span>
           </div>
         </div>
 
@@ -146,7 +148,7 @@ export default function Home() {
               <div className="project-image-wrap">
                 <img
                   src={project.image}
-                  alt={`Imagem conceitual do projeto ${project.title}`}
+                  alt={`Imagem ilustrativa do projeto ${project.title}`}
                   loading="lazy"
                 />
                 <span className="project-number">{project.number}</span>
@@ -167,22 +169,22 @@ export default function Home() {
         </div>
 
         <div className="projects-note">
-          <span>AN OPEN CANVAS FOR CREATIVE WORK</span>
+          <span>UM ESPAÇO ABERTO À CRIATIVIDADE</span>
           <span>01 — 04</span>
         </div>
       </section>
 
       <section className="manifesto-section" id="manifesto">
         <div className="manifesto-top">
-          <span className="eyebrow">02 / THE IDEA</span>
+          <span className="eyebrow">02 / NOSSA IDEIA</span>
           <span className="manifesto-symbol">W.</span>
         </div>
 
         <div className="manifesto-content">
           <h2>
-            Your talent deserves
+            Seu talento merece
             <br />
-            <span className="serif-italic">more than a link.</span>
+            <span className="serif-italic">mais do que um link.</span>
           </h2>
 
           <div className="manifesto-copy">
@@ -193,29 +195,29 @@ export default function Home() {
             </p>
             <p>
               O Workfolio nasce para aproximar portfólio, identidade
-              profissional e comunidade em uma experiência construída para
-              quem faz.
+              profissional e comunidade em uma experiência criada para quem
+              faz.
             </p>
           </div>
         </div>
 
         <div className="manifesto-bottom">
-          <span>NOT JUST WHAT YOU DO.</span>
-          <span>WHO YOU ARE AND WHAT YOU CAN BECOME.</span>
+          <span>MAIS DO QUE AQUILO QUE VOCÊ FAZ.</span>
+          <span>QUEM VOCÊ É E ATÉ ONDE PODE CHEGAR.</span>
         </div>
       </section>
 
       <section className="disciplines-section" id="disciplines">
         <div className="disciplines-heading">
-          <span className="eyebrow">03 / DIFFERENT MINDS, ONE SPACE</span>
+          <span className="eyebrow">03 / DIFERENTES TALENTOS, UM SÓ ESPAÇO</span>
           <h2>
-            Many ways
+            Muitas formas
             <br />
-            <span className="serif-italic">to create.</span>
+            <span className="serif-italic">de criar.</span>
           </h2>
           <p>
             Não importa a ferramenta, a linguagem ou o caminho. Existe espaço
-            para diferentes formas de criar.
+            para diferentes formas de criar e transformar ideias.
           </p>
         </div>
 
@@ -236,42 +238,44 @@ export default function Home() {
         <div className="community-decoration">W</div>
 
         <div className="community-content">
-          <span className="eyebrow">04 / THE NEXT CHAPTER</span>
+          <span className="eyebrow">04 / O PRÓXIMO CAPÍTULO</span>
           <h2>
-            Make your work
+            Mostre seu trabalho.
             <br />
-            <span className="serif-italic">mean something.</span>
+            <span className="serif-italic">Amplie seus horizontes.</span>
           </h2>
           <p>
-            Estamos construindo um novo espaço para quem vive de ideias,
-            projetos e possibilidades.
+            Estamos construindo um novo espaço para profissionais que vivem de
+            ideias, projetos e possibilidades.
           </p>
           <span className="coming-soon">
             <span className="status-dot" />
-            WORKFOLIO IS IN DEVELOPMENT
+            WORKFOLIO EM DESENVOLVIMENTO
           </span>
         </div>
 
         <div className="community-bottom">
-          <span>YOUR NEXT CHAPTER STARTS WITH YOUR WORK.</span>
+          <span>SUA PRÓXIMA CONEXÃO PODE COMEÇAR AQUI.</span>
           <span>WORKFOLIO® 2026</span>
         </div>
       </section>
 
       <footer className="site-footer">
-        <a href="#" className="wordmark footer-wordmark">
+        <a href="#top" className="wordmark footer-wordmark">
           workfolio<span className="wordmark-dot">.</span>
         </a>
 
         <span className="footer-description">
-          Your work. Your identity. Your network.
+          Seu trabalho. Sua identidade. Suas conexões.
         </span>
 
         <a href="#top" className="back-to-top">
-          Back to top <ArrowUpRight size={15} />
+          Voltar ao topo <ArrowUpRight size={15} />
         </a>
 
-        <span className="copyright">© 2026 WORKFOLIO. ALL RIGHTS RESERVED.</span>
+        <span className="copyright">
+          © 2026 WORKFOLIO. TODOS OS DIREITOS RESERVADOS.
+        </span>
       </footer>
     </main>
   );
